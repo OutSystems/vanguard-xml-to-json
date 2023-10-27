@@ -1,0 +1,5 @@
+.vs/
+XmlToJson/bin/
+XmlToJson/obj/
+XmlToJson/ExternalLogic.zip
+*.cache
