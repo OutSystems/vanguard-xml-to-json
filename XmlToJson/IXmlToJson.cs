@@ -9,7 +9,8 @@ namespace OutSystems.XmlToJson
 {
     [OSInterface(
         Description = "Converts the supplied XML to JSON.",
-        Name = "XmlToJson")]
+        Name = "XmlToJson", 
+        IconResourceName = "XmlToJson.resources.xmltojson.png")]
     public interface IXmlToJson
     {
         [OSAction(Description = "Converts the supplied XML to JSON.",
