@@ -1,11 +1,13 @@
 # vanguard-xml-to-json
 ODC XmlToJson Forge Component - RDV-691
 
-This is a port of the O11 [XmlToJson](https://www.outsystems.com/forge/component-overview/3709/xmltojson "XmlToJson") to ODC.
+This is a port of the O11 [XmlToJson](https://www.outsystems.com/forge/component-overview/3709/xmltojson-o11) to ODC.
+
+**THIS CODE IS NOT SUPPORTED BY OUTSYSTEMS.**
 
 ------------
 
-A big word of appreciation to the OutSystems Community team who created and is maintaining  this component in O11:
+A big word of appreciation to the OutSystems Community team who created and is maintaining this component in O11:
 - Tiago Bojikian Costa Vital
 - Borislav Shumarov
 - Kilian Hekhuis
@@ -35,3 +37,8 @@ If specified, each node in the XML document that has a local name that is equal 
 #### Output parameters
 `JSON`: {Text} The converted JSON.
 The resulting JSON can be used to create structures from (design time), then serialized (run time).
+
+## Acknowledgments
+This project is based on the OutSystems 11 Forge component  [XmlToJson](https://www.outsystems.com/forge/component-overview/3709/xmltojson-o11).
+
+This project uses the third-party Newtonsoft.Json framework. Please refer to https://www.newtonsoft.com/json, https://www.nuget.org/packages/Newtonsoft.Json/, and  https://github.com/JamesNK/Newtonsoft.Json for more information.
