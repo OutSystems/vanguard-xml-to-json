@@ -4,7 +4,7 @@
 
 `vanguard-xml-to-json` is an OutSystems Developer Cloud (ODC) External Logic Library that converts XML documents to their JSON equivalents. This is a port of the OutSystems 11 [XmlToJson Forge component](https://www.outsystems.com/forge/component-overview/3709/xmltojson-o11) to the ODC platform.
 
-The library is built on .NET 8.0 and leverages Newtonsoft.Json for the core XML-to-JSON transformation logic.
+The library is built on .NET 10.0 and leverages Newtonsoft.Json for the core XML-to-JSON transformation logic.
 
 ## System Boundary
 
@@ -69,8 +69,8 @@ A simple data structure representing XML node names that should be treated as ar
 #### Project Configuration
 **File:** `XmlToJson/XmlToJson.csproj`
 
-.NET 8.0 project configuration with:
-- Target framework: `net8.0`
+.NET 10.0 project configuration with:
+- Target framework: `net10.0`
 - NuGet dependencies: `Newtonsoft.Json` (13.0.3), `OutSystems.ExternalLibraries.SDK` (1.5.0)
 - Embedded icon resource for ODC UI
 
@@ -202,4 +202,4 @@ Potential enhancements:
 - Custom namespace handling behavior
 
 ### .NET Version Support
-The library targets .NET 8.0. Monitor OutSystems ODC runtime updates to ensure alignment with supported .NET versions.
+The library targets .NET 10.0. Monitor OutSystems ODC runtime updates to ensure alignment with supported .NET versions.

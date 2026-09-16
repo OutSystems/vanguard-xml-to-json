@@ -24,7 +24,7 @@ This is a community-maintained port of the OutSystems 11 XmlToJson Forge compone
 
 To contribute to this project, you'll need:
 
-- **.NET 8.0 SDK** or later - [Download here](https://dotnet.microsoft.com/download/dotnet/8.0)
+- **.NET 10.0 SDK** or later - [Download here](https://dotnet.microsoft.com/download/dotnet/10.0)
 - **Visual Studio 2022** or **Visual Studio Code** (recommended IDEs)
 - **PowerShell** (for running the packaging script on Windows)
 - **Git** for version control
@@ -107,7 +107,7 @@ cd XmlToJson
 dotnet publish -c Release -r linux-x64 --self-contained false
 ```
 
-The output will be in `bin/Release/net8.0/linux-x64/publish/`
+The output will be in `bin/Release/net10.0/linux-x64/publish/`
 
 ## Development Workflow
 
@@ -247,10 +247,10 @@ cd XmlToJson
 dotnet publish -c Release -r linux-x64 --self-contained false
 
 # On Linux/macOS
-zip -r ExternalLibrary.zip bin/Release/net8.0/linux-x64/publish/*
+zip -r ExternalLibrary.zip bin/Release/net10.0/linux-x64/publish/*
 
 # On Windows (PowerShell)
-Compress-Archive -Path .\bin\Release\net8.0\linux-x64\publish\* -DestinationPath ExternalLibrary.zip
+Compress-Archive -Path .\bin\Release\net10.0\linux-x64\publish\* -DestinationPath ExternalLibrary.zip
 ```
 
 ### Uploading to ODC
@@ -337,7 +337,7 @@ dotnet add package Newtonsoft.Json --version <new-version>
 
 ## .NET Version Upgrades
 
-The project currently targets .NET 8.0. When upgrading to a new .NET version:
+The project currently targets .NET 10.0. When upgrading to a new .NET version:
 
 1. **Verify ODC runtime support** - Check OutSystems documentation for supported .NET versions
 2. **Update TargetFramework** in `XmlToJson.csproj`

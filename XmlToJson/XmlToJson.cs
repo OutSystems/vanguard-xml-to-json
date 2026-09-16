@@ -25,14 +25,14 @@ namespace OutSystems.XmlToJson
             foreach (var item in ArrayNodes)
             {
                 // it may be possible to be a better select than fetch all, but I couldn't get it to work with random namespaces
-                foreach (XmlNode node in doc.SelectNodes("//*"))
+                foreach (XmlNode node in doc.SelectNodes("//*")!)
                 {
                     if (node.LocalName == item.Name)
                     {
                         XmlAttribute attr = doc.CreateAttribute("json", "Array", "http://james.newtonking.com/projects/json");
                         attr.Value = "true";
 
-                        node.Attributes.Append(attr);
+                        node.Attributes!.Append(attr);
                     }
 
                 }
