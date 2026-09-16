@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="OutSystems.ExternalLibraries.SDK" Version="1.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="OutSystems.ExternalLibraries.SDK" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>
