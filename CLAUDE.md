@@ -4,7 +4,7 @@ This document provides guidance for Claude Code when working with the `vanguard-
 
 ## Project Overview
 
-This is an **OutSystems Developer Cloud (ODC) External Logic Library** that converts XML documents to JSON. It's a .NET 8.0 library that wraps Newtonsoft.Json's XML-to-JSON conversion functionality for use in OutSystems ODC applications.
+This is an **OutSystems Developer Cloud (ODC) External Logic Library** that converts XML documents to JSON. It's a .NET 10.0 library that wraps Newtonsoft.Json's XML-to-JSON conversion functionality for use in OutSystems ODC applications.
 
 **Key Context:**
 - **NOT officially supported by OutSystems** - this is a community-maintained port
@@ -18,7 +18,7 @@ This is an **OutSystems Developer Cloud (ODC) External Logic Library** that conv
 - `XmlToJson/IXmlToJson.cs` - Public interface with OutSystems SDK attributes
 - `XmlToJson/XmlToJson.cs` - Core implementation (~50 lines)
 - `XmlToJson/Node.cs` - Data structure for ArrayNodes parameter
-- `XmlToJson/XmlToJson.csproj` - .NET 8.0 project file
+- `XmlToJson/XmlToJson.csproj` - .NET 10.0 project file
 - `XmlToJson/generate_upload_package.ps1` - Packaging script for ODC deployment
 
 ### Build Commands
@@ -224,7 +224,7 @@ The XML parsing and JSON serialization are CPU-bound, not I/O-bound. Async would
 ### Current State
 - **Branch:** `main`
 - **Status:** Clean (no uncommitted changes)
-- **Recent work:** Upgraded from .NET 6 to .NET 8 (commits `6c251c6` and `36c7c8f`)
+- **Recent work:** Upgraded from .NET 6 to .NET 8 (commits `6c251c6` and `36c7c8f`), then from .NET 8 to .NET 10
 
 ### When Creating Commits
 
